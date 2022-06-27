@@ -65,6 +65,12 @@ MODEL : " SEQUENTIAL_1 "
                                        BLOCK DIAGRAM
 ![BLOCK DIAGRAM](https://user-images.githubusercontent.com/78750216/175886183-71054e65-0be6-40c3-95f5-90def8e9ca14.png)
                             
+**TRAINING PROCESS :** <br/>
+The training on a personal computer (RAM - 4 GB) took about 3 hours with 20 units in dense layer. The model trained with dataset which had been pre- processed and optimized for training beforehand. Later it has categorically distributed the train and test labels and flattened out train and test arrays for easy input into model. Then stuck with a model with 4 Convolution layers as it gave us the highest accuracy. Model accuracy increased with each epoch.
+
+At first, it increased exponentially, and later had a minute and steady growth. At the end of training, the result obtained was 95.93 percent accuracy which is a little shy of the maximum accuracy obtained using the dataset. The evaluation of the model was done with the test data provided. This accuracy can be increased further in future research work by pre-processing the dataset even more and by adding new hyper parameters to the keras model. The lower the loss, the better the model (unless the model has over fitted to the training data). The calculation of loss on train and test data was done. In case of neural networks, the loss is usually negative log-likelihood and the residual sum of squares for classification and regression respectively. Then naturally, objective was to reduce the loss 20 functions value with respect to the model’s parameters. The loss with the model during training began at 2.24 with the first epoch and ended up at 0.21.
+
+As the model chapter previously stated, classifier contained two Convolution and a single Max pooling layer with a dropout layer and a dense layer with 512 units. There was a tried tweaking this by adding a few more back to back convolution layers but this didn’t work well for the model and resulted in a lower accuracy.
 
 
                        
